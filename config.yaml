@@ -1,6 +1,6 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://rdlynx19.github.io"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Pushkar's Portfolio"
 theme: hugo-profile
 
 outputs:
