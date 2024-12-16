@@ -61,7 +61,7 @@ params:
   title: "Pushkar's Portfolio"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "static/images/headshot-modified.png"
+  favicon: "images/headshot-modified.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only t/images/headshot-modified.pnghe css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -356,6 +356,61 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
 
+      - title: Image Denoising
+        content: Implementation of an image-denoising autoencoder model on the MNIST dataset
+        image: /images/projects/denoising/auto-denoised.png
+        featured:
+          name: Post
+          link: /image-denoising
+        badges:
+          - "Python"
+          - "Deep Learning"
+          - "MNIST"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/ImageDenoisingAE
+    
+      - title: Tethered UAV 2D Simulation
+        content: Simulation of a tethered UAV using Newtonian Dynamics and PD Control
+        image: /images/projects/taut-cable/taut-cable.gif
+        featured:
+          name: Post
+          link: /taut-cable-sim
+        badges:
+          - "Python"
+          - "Dynamics"
+          - "Control"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/taut-cable-2D-control 
+      
+      - title: Rapidly Exploring Random Trees
+        content: Implementation of the RRT Path Finding Algorithm
+        image: /images/projects/rrt/obstacle-rrt.gif
+        featured:
+          name: Post
+          link: /rrt-implementation
+        badges:
+          - "Python"
+          - "Path Planning"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/rrt_challenge
+      
+      - title: Maze Solving using Wavefront Algorithm
+        content: Implementation of the Wavefront Path Finding Algorithm
+        image: /images/projects/wavefront/maze1.gif
+        featured:
+          name: Post
+          link: /wavefront-maze
+        badges:
+          - "Python"
+          - "Path Planning"
+          - "BFS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/maze-solving
+      
       - title: ESP32 WayFinder
         content: ESP32 based rugged navigation device
         image: /images/projects/profile2.jpg
@@ -406,8 +461,8 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
+      github: https://github.com/rdlynx19
+      linkedin: https://www.linkedin.com/in/pushkar-dave/
       # twitter: https://twitter.com
       # instagram: https://instagram.com
       # facebook: https://facebook.com
