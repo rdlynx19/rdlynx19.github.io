@@ -311,39 +311,67 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Franka Whack a Mole
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: Franka Plays Whack a Mole
+        content: ROS Package to make the 7DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
+        image: /images/projects/franka-mole/side-mole.gif
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          name: Post
+          link: /franka-whack-a-mole
+        badges:
+          - "Python"
+          - "ROS2"
+          - "MoveIt2"
+          - "OpenCV"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ME495-EmbeddedSystems/finalproject-whack-a-mole
+
+      - title: Feedback Control of Omnidirectional Mobile Manipulator 
+        content: Controlling a KUKA YouBot to pick and place a cube in CoppeliaSim
+        image: /images/projects/kuka-sim/you-bot.gif
+        featured:
+          name: Post
+          link: /omnidirection-mobile-manipulator
+        badges:
+          - "Python"
+          - "Kinematics"
+          - "CoppeliaSim"
+          - "Trajectory Generation"
+          - "Motion Planning"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/KUKAYouBotSim
+
+      - title: Quadrotor Control and Trajectory Generation
+        content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
+        image: /images/projects/quad-matlab/helix-quad.gif
+        featured:
+          name: Post
+          link: /quad-trajectory
+        badges:
+          - "MATLAB"
+          - "Trajectory Generation"
+          - "Control"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
+
+      - title: ESP32 WayFinder
+        content: ESP32 based rugged navigation device
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
         badges:
           - "Hugo"
           - "Bootstrap"
           - "Javascript"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
-
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
+            url: https://github.com/gurusabarish/HugoProfileV2
+      
+      - title: Multibody Dynamics Simulation
+        content: Simulating the physics of two rigidbodies 
         image: /images/projects/profile2.jpg
         featured:
           name: Demo V2
@@ -403,7 +431,7 @@ params:
   terms:
     read: "Read"
     toc: "Table Of Contents"
-    copyright: "All rights reserved"
+    copyright: "Pushkar Dave"
     pageNotFound: "Page not found"
     emailText: "Check out this site"
 
