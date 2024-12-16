@@ -1,4 +1,4 @@
-baseURL: "https://rdlynx19.github.io"
+baseURL: "https://rdlynx19.github.io/"
 languageCode: "en-us"
 title: "Pushkar's Portfolio"
 theme: hugo-profile
