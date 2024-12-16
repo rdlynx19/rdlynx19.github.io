@@ -1,3 +1,3 @@
 [submodule "themes/hugo-profile"]
 	path = themes/hugo-profile
-	url = https://github.com/rdlynx19/hugo-profile
+	url = git@github.com:rdlynx19/hugo-profile.git
