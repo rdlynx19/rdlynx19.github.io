@@ -315,7 +315,7 @@ params:
         content: ROS Package to make the 7DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
         image: /images/projects/franka-mole/side-mole.gif
         featured:
-          name: Post
+          name: Read More
           link: /franka-whack-a-mole
         badges:
           - "Python"
@@ -330,7 +330,7 @@ params:
         content: Controlling a KUKA YouBot to pick and place a cube in CoppeliaSim
         image: /images/projects/kuka-sim/you-bot.gif
         featured:
-          name: Post
+          name: Read More
           link: /omnidirection-mobile-manipulator
         badges:
           - "Python"
@@ -346,7 +346,7 @@ params:
         content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
         image: /images/projects/quad-matlab/helix-quad.gif
         featured:
-          name: Post
+          name: Read More
           link: /quad-trajectory
         badges:
           - "MATLAB"
@@ -360,7 +360,7 @@ params:
         content: Implementation of an image-denoising autoencoder model on the MNIST dataset
         image: /images/projects/denoising/auto-denoised.png
         featured:
-          name: Post
+          name: Read More
           link: /image-denoising
         badges:
           - "Python"
@@ -374,7 +374,7 @@ params:
         content: Simulation of a tethered UAV using Newtonian Dynamics and PD Control
         image: /images/projects/taut-cable/taut-cable.gif
         featured:
-          name: Post
+          name: Read More
           link: /taut-cable-sim
         badges:
           - "Python"
@@ -388,7 +388,7 @@ params:
         content: Implementation of the RRT Path Finding Algorithm
         image: /images/projects/rrt/obstacle-rrt.gif
         featured:
-          name: Post
+          name: Read More
           link: /rrt-implementation
         badges:
           - "Python"
@@ -401,7 +401,7 @@ params:
         content: Implementation of the Wavefront Path Finding Algorithm
         image: /images/projects/wavefront/maze1.gif
         featured:
-          name: Post
+          name: Read More
           link: /wavefront-maze
         badges:
           - "Python"
@@ -415,7 +415,7 @@ params:
         content: ESP32 based rugged navigation device
         image: /images/projects/profile2.jpg
         featured:
-          name: Demo V2
+          name: Read More
           link: https://hugo-profile-2.netlify.app
         badges:
           - "Hugo"
@@ -429,7 +429,7 @@ params:
         content: Simulating the physics of two rigidbodies 
         image: /images/projects/profile2.jpg
         featured:
-          name: Demo V2
+          name: Read More
           link: https://hugo-profile-2.netlify.app
         badges:
           - "Hugo"
