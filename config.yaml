@@ -356,6 +356,20 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
 
+      - title: Multibody Dynamics Simulation
+        content: Simulating the physics of a jack bouncing around in a box
+        image: /images/projects/jack-sim/jack-sim.gif
+        featured:
+          name: Read More
+          link: /jack-box-simulation
+        badges:
+          - "Python"
+          - "Dynamics"
+          - "Lagrangian Mechanics"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/jack-box-sim
+
       - title: Image Denoising
         content: Implementation of an image-denoising autoencoder model on the MNIST dataset
         image: /images/projects/denoising/auto-denoised.png
@@ -425,19 +439,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/gurusabarish/HugoProfileV2
       
-      - title: Multibody Dynamics Simulation
-        content: Simulating the physics of two rigidbodies 
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Read More
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+      
 
   #Contact
   # contact:
