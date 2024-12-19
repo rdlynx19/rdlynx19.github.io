@@ -1,4 +1,4 @@
-baseURL: "https://pushkardave.com"
+baseURL: "https://pushkardave.com/"
 languageCode: "en-us"
 title: "Pushkar's Portfolio"
 theme: hugo-profile
