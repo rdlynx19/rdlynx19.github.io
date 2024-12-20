@@ -8,14 +8,14 @@ tags:
   - Dynamics
   - Lagrangian Mechanics
 image: 
-description: This project involves modeling a jack in a box with Lagrangian Mechanics
+description: ""
 toc: true
 mathjax: true
 ---
 
 ### Demo Video
 This project involved modeling a Jack and a Box and the impacts between them using Lagrangian Mechanics. 
-z
+
 {{<youtube 3SNTRruWNic>}}
 
 ---

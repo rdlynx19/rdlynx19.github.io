@@ -361,7 +361,7 @@ params:
         image: /images/projects/jack-sim/jack-sim.gif
         featured:
           name: Read More
-          link: /projects/jack-box-simulation
+          link: /jack-box-simulation
         badges:
           - "Python"
           - "Dynamics"
@@ -475,14 +475,14 @@ params:
 
   # Single pages like blog and post
   singlePages:
-    socialShare: true
+    socialShare: false
     readTime:
-      enable: true
+      enable: false
       content: "min read"
     scrollprogress:
       enable: true
     tags:
-      openInNewTab: true
+      openInNewTab: false
 
   # For translations
   terms:
