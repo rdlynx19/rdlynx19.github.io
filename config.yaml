@@ -361,7 +361,7 @@ params:
         image: /images/projects/jack-sim/jack-sim.gif
         featured:
           name: Read More
-          link: /jack-box-simulation
+          link: /projects/jack-box-simulation
         badges:
           - "Python"
           - "Dynamics"
