@@ -313,7 +313,7 @@ params:
     items:
       - title: Franka Plays Whack a Mole
         content: ROS Package to make the 7DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
-        image: /images/projects/franka-mole/side-mole.gif
+        image: /images/projects/franka-mole/franka.gif
         featured:
           name: Read More
           link: /franka-whack-a-mole
