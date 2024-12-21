@@ -24,11 +24,11 @@ markup:
 
 Menus:
   main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
+    - identifier: About
+      name: About
+      title: About Me
+      url: /about
+      weight: 2
     - identifier: github
       name: Github
       title: github Link
@@ -112,8 +112,8 @@ params:
   # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandLogo: "images/headshot-modified.png" # Logo for the brand | default is the favicon variable
+    showBrandLogo: true # Show brand logo in nav bar | default is true
     brandName: "Pushkar Dave" # Brand name for the brand | default is the title variable
     disableSearch: true
     # searchPlaceholder: "Search"
@@ -309,7 +309,7 @@ params:
   # projects
   projects:
     enable: true
-    # title: "Custom Name"
+    # title: "Featured Projects"
     items:
       - title: Franka Plays Whack a Mole
         content: ROS Package to make the 7DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
@@ -425,7 +425,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/maze-solving
       
-      - title: ESP32 WayFinder
+      - title: Sequential Planning for Multi UAVs
         content: ESP32 based rugged navigation device
         image: /images/projects/profile2.jpg
         featured:
@@ -441,7 +441,7 @@ params:
       
       
 
-  #Contact
+  # Contact
   # contact:
   #   enable: false
   #   # title: "Custom Name"
