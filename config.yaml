@@ -61,7 +61,7 @@ params:
   title: "Pushkar's Portfolio"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "images/headshot-modified.png"
+  favicon: "/headshot-modified.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only t/images/headshot-modified.pnghe css, or only the js files through the CDN. Any other value will make so that CDN is not used.
