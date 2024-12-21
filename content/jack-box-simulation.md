@@ -11,6 +11,7 @@ image:
 description: ""
 toc: true
 mathjax: true
+repoName: jack-box-sim
 ---
 
 ### Demo Video

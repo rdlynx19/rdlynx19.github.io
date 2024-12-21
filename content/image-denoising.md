@@ -11,6 +11,7 @@ image:
 description: ""
 toc: true
 mathjax: true
+repoName: ImageDenoisingAE
 ---
 
 ### Overview
