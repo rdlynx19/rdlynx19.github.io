@@ -52,7 +52,7 @@ The variation of loss over all iterations is shown in this figure.
 
 ### Related Work
 
-While studying Neural Networks, I implemented a couple of MNIST Classifier models, one using PyTorch and the other using just NumPy. The one using NumPy can also be referred to as implementing a Neural Network from Scratch. The source code for these models can be found [here](https://github.com/rdlynx19/MNIST-Classifiers).
+During my study of Neural Networks, I implemented two MNIST classifier models: one using PyTorch and the other by building a neural network from scratch using NumPy. The source code for these models can be found [here](https://github.com/rdlynx19/MNIST-Classifiers).
 
 
 
