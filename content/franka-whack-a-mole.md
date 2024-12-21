@@ -12,6 +12,7 @@ image:
 description: ""
 toc: true
 mathjax: true
+repoName: franka-whack-a-mole
 ---
 
 ### Demo Video
