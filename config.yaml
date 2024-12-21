@@ -370,9 +370,9 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/jack-box-sim
 
-      - title: Image Denoising
+      - title: Image Denoising using CNN
         content: Implementation of an image-denoising autoencoder model on the MNIST dataset
-        image: /images/projects/denoising/auto-denoised.png
+        image: /images/projects/denoising/image-denoising.png
         featured:
           name: Read More
           link: /image-denoising
