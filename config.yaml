@@ -37,7 +37,7 @@ Menus:
     - identifier: resume
       name: Resume
       title: resume Link
-      url: https://github.com/rdlynx19
+      url: /resume
       weight: 2
     #Dropdown menu
     # - identifier: dropdown
