@@ -1,6 +1,6 @@
 ---
 title: "Pushkar Dave"
-date: 2024-12-12
+date: 2024-12-24
 draft: false
 author: 
 tags:
@@ -16,7 +16,7 @@ socialShare: false
 <img src="/images/misc/web2.jpg" alt="drawing" width="500" style="margin-bottom: 15px;"/>
 
 
-Hi, I am an MS Robotics Student at Northwestern University. I am currently researching project ideas involving Multi-Robot SLAM. Previously, I worked as a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion. 
+Hi! I am an MS Robotics Student at Northwestern University. I am currently researching project ideas involving Multi-Robot SLAM. Previously, I worked as a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion. 
 
 ---
 

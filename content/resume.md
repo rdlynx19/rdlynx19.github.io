@@ -11,6 +11,7 @@ image:
 description: ""
 toc: true
 mathjax: true
+socialShare: false
 ---
 <iframe src="/Pushkar-Resume.pdf" width="100%" height="600px"></iframe>
 
