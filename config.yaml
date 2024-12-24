@@ -312,7 +312,7 @@ params:
     # title: "Featured Projects"
     items:
       - title: Franka Plays Whack a Mole
-        content: ROS Package to make the 7DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
+        content: ROS2 Package to make the 7DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
         image: /images/projects/franka-mole/franka.gif
         featured:
           name: Read More
