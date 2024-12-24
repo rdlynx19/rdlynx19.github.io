@@ -8,13 +8,15 @@ image:
 description: ""
 toc: true
 mathjax: true
+socialShare: false
 ---
 ### About Me
-Hi, I am currently an MS Robotics Student at Northwestern University. 
-<!-- ![image](/web2.jpg) -->
-<img src="/images/misc/web2.jpg" alt="drawing" width="500"/>
 
-I am currently working on co-operative indoor mapping using a quadrotor and a ground robot. Previously, I worked as a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion. 
+<!-- ![image](/web2.jpg) -->
+<img src="/images/misc/web2.jpg" alt="drawing" width="500" style="margin-bottom: 15px;"/>
+
+
+Hi, I am an MS Robotics Student at Northwestern University. I am currently researching project ideas involving Multi-Robot SLAM. Previously, I worked as a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion. 
 
 ---
 
@@ -33,6 +35,8 @@ Visvesvaraya National Institute of Technology - BS in Electrical and Electronics
 
 December 2020 - May 2024
 
+<br>
+
 ---
 
 ### Contact
@@ -40,5 +44,7 @@ December 2020 - May 2024
 To contact me, please email to:
 pushkar@u.northwestern.edu
 
-I'm happy to chat about robots, volleyball, anime and anything else
+I'm happy to chat about robots, volleyball, anime and anything else.
+
+For my resume, please refer to: [Pushkar's Resume](https://pushkardave.com/resume)
  

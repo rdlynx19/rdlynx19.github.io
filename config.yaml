@@ -491,6 +491,7 @@ params:
     copyright: "Pushkar Dave"
     pageNotFound: "Page not found"
     emailText: "Check out this site"
+    social: Github
 
   datesFormat:
     article: "Jan 2, 2006"
