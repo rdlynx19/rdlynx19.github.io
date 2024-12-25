@@ -80,7 +80,7 @@ params:
   animate: true
 
   theme:
-    # disableThemeToggle: true
+    disableThemeToggle: true
     defaultTheme: "light" # dark
 
   font:
@@ -312,7 +312,7 @@ params:
     # title: "Featured Projects"
     items:
       - title: Franka Plays Whack a Mole
-        content: ROS2 Package to make the 7DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
+        content: ROS2 Package to make the 7-DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
         image: /images/projects/franka-mole/franka.gif
         featured:
           name: Read More
@@ -384,19 +384,19 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/ImageDenoisingAE
     
-      - title: Tethered UAV 2D Simulation
-        content: Simulation of a tethered UAV using Newtonian Dynamics and PD Control
-        image: /images/projects/taut-cable/taut-cable.gif
-        featured:
-          name: Read More
-          link: /taut-cable-sim
-        badges:
-          - "Python"
-          - "Dynamics"
-          - "Control"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/taut-cable-2D-control 
+      # - title: Tethered UAV 2D Simulation
+      #   content: Simulation of a tethered UAV using Newtonian Dynamics and PD Control
+      #   image: /images/projects/taut-cable/taut-cable.gif
+      #   featured:
+      #     name: Read More
+      #     link: /taut-cable-sim
+      #   badges:
+      #     - "Python"
+      #     - "Dynamics"
+      #     - "Control"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/taut-cable-2D-control 
       
       - title: Rapidly Exploring Random Trees
         content: Implementation of the RRT Path Finding Algorithm
