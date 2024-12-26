@@ -425,19 +425,19 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/maze-solving
       
-      - title: Sequential Planning for Multi UAVs
-        content: ESP32 based rugged navigation device
-        image: /images/projects/profile2.jpg
+      - title: ESP32 Navigation Device 
+        content: ESP32 based visual navigation device
+        image: /images/projects/wayfinder/navigation.png
         featured:
           name: Read More
-          link: https://hugo-profile-2.netlify.app
+          link: /wayfinder
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "C++"
+          - "ESP32"
+          - "Microcontrollers"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/rdlynx19/ESP32-Wayfinder
       
       
 
