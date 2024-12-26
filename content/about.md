@@ -10,17 +10,17 @@ toc: true
 mathjax: true
 socialShare: false
 ---
-### About Me
+## About Me
 
 <!-- ![image](/web2.jpg) -->
-<img src="/images/misc/web2.jpg" alt="drawing" width="500" style="margin-bottom: 15px;"/>
+<img src="/images/misc/web-headshot.jpg" alt="drawing" width="500" style="margin-bottom: 15px;"/>
 
 
 Hi! I am an MS Robotics Student at Northwestern University. I am currently researching project ideas involving Multi-Robot SLAM. Previously, I worked as a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion. 
 
 ---
 
-### Education
+## Education
 <img align="left" src="/images/misc/nu.jpeg" alt="drawing" width="" style="margin-right: 15px;"/>
 
 Northwestern University - MS in Robotics
@@ -39,7 +39,7 @@ December 2020 - May 2024
 
 ---
 
-### Contact
+## Contact
 
 To contact me, please email to:
 pushkar@u.northwestern.edu
