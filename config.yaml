@@ -407,9 +407,10 @@ params:
         badges:
           - "Python"
           - "Path Planning"
+          - "RRT"
         links:
           - icon: fab fa-github
-            url: https://github.com/rdlynx19/rrt_challenge
+            url: https://github.com/rdlynx19/RRT_Challenge
       
       - title: Maze Solving using Wavefront Algorithm
         content: Implementation of the Wavefront Path Finding Algorithm
