@@ -331,7 +331,7 @@ params:
         image: /images/projects/kuka-sim/you-bot.gif
         featured:
           name: Read More
-          link: /omnidirection-mobile-manipulator
+          link: /kuka-sim
         badges:
           - "Python"
           - "Kinematics"
