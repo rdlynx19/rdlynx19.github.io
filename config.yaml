@@ -59,7 +59,7 @@ Menus:
 
 params:
   title: "Pushkar's Portfolio"
-  description: Text about my cool site
+  description: Roboticist
   # staticPath: ""  # The path to serve the static files from
   favicon: "/headshot-modified.png"
 
