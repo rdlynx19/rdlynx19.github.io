@@ -13,7 +13,7 @@ socialShare: false
 ## About Me
 
 <!-- ![image](/web2.jpg) -->
-<img src="/images/misc/web-headshot.jpg" alt="drawing" width="500" style="margin-bottom: 15px;"/>
+<img src="/images/misc/web-temp.jpg" alt="drawing" width="500" height="700" style="margin-bottom: 15px;"/>
 
 
 Hi! I am an MS Robotics Student at Northwestern University. I am currently researching project ideas involving Multi-Robot SLAM. Previously, I worked as a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion. 
