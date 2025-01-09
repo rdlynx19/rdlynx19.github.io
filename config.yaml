@@ -306,55 +306,105 @@ params:
   #       content: Contributed to a open source project.
   #       url: https://example.com
 
-  # projects
-  projects:
+  featured_projects:
     enable: true
-    # title: "Featured Projects"
+    title: "Featured Projects"
     items:
-      - title: Franka Plays Whack a Mole
-        content: ROS2 Package to make the 7-DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
-        image: /images/projects/franka-mole/franka.gif
-        featured:
+    - title: Franka Plays Whack a Mole
+      content: ROS2 Package to make the 7-DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
+      image: /images/projects/franka-mole/franka.gif
+      featured:
           name: Read More
           link: /franka-whack-a-mole
-        badges:
+      badges:
           - "Python"
           - "ROS2"
           - "MoveIt2"
           - "OpenCV"
-        links:
+      links:
           - icon: fab fa-github
             url: https://github.com/ME495-EmbeddedSystems/finalproject-whack-a-mole
 
-      - title: Feedback Control of Omnidirectional Mobile Manipulator 
-        content: Controlling a KUKA YouBot to pick and place a cube in CoppeliaSim
-        image: /images/projects/kuka-sim/you-bot.gif
-        featured:
-          name: Read More
-          link: /kuka-sim
-        badges:
-          - "Python"
-          - "Kinematics"
-          - "CoppeliaSim"
-          - "Trajectory Generation"
-          - "Motion Planning"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/KUKAYouBotSim
+    - title: Feedback Control of Omnidirectional Mobile Manipulator 
+      content: Controlling a KUKA YouBot to pick and place a cube in CoppeliaSim
+      image: /images/projects/kuka-sim/you-bot.gif
+      featured:
+        name: Read More
+        link: /kuka-sim
+      badges:
+        - "Python"
+        - "Kinematics"
+        - "CoppeliaSim"
+        - "Trajectory Generation"
+        - "Motion Planning"
+      links:
+        - icon: fab fa-github
+          url: https://github.com/rdlynx19/KUKAYouBotSim
+       
 
-      - title: Quadrotor Control and Trajectory Generation
-        content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
-        image: /images/projects/quad-matlab/helix-quad.gif
-        featured:
-          name: Read More
-          link: /quad-trajectory
-        badges:
-          - "MATLAB"
-          - "Trajectory Generation"
-          - "Control"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
+    - title: Quadrotor Control and Trajectory Generation
+      content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
+      image: /images/projects/quad-matlab/helix-quad.gif
+      featured:
+        name: Read More
+        link: /quad-trajectory
+      badges:
+        - "MATLAB"
+        - "Trajectory Generation"
+        - "Control"
+      links:
+        - icon: fab fa-github
+          url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
+
+  # projects
+  projects:
+    enable: true
+    title: "Other Projects"
+    items:
+      # - title: Franka Plays Whack a Mole
+      #   content: ROS2 Package to make the 7-DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
+      #   image: /images/projects/franka-mole/franka.gif
+      #   featured:
+      #     name: Read More
+      #     link: /franka-whack-a-mole
+      #   badges:
+      #     - "Python"
+      #     - "ROS2"
+      #     - "MoveIt2"
+      #     - "OpenCV"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/ME495-EmbeddedSystems/finalproject-whack-a-mole
+
+      # - title: Feedback Control of Omnidirectional Mobile Manipulator 
+      #   content: Controlling a KUKA YouBot to pick and place a cube in CoppeliaSim
+      #   image: /images/projects/kuka-sim/you-bot.gif
+      #   featured:
+      #     name: Read More
+      #     link: /kuka-sim
+      #   badges:
+      #     - "Python"
+      #     - "Kinematics"
+      #     - "CoppeliaSim"
+      #     - "Trajectory Generation"
+      #     - "Motion Planning"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/KUKAYouBotSim
+
+      # - title: Quadrotor Control and Trajectory Generation
+      #   content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
+      #   image: /images/projects/quad-matlab/helix-quad.gif
+      #   featured:
+      #     name: Read More
+      #     link: /quad-trajectory
+      #   badges:
+      #     - "MATLAB"
+      #     - "Trajectory Generation"
+      #     - "Control"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
 
       - title: Multibody Dynamics Simulation
         content: Simulating the physics of a jack bouncing around in a box
@@ -427,7 +477,7 @@ params:
             url: https://github.com/rdlynx19/maze-solving
       
       - title: ESP32 Navigation Device 
-        content: ESP32 based visual navigation device
+        content: ESP32 based Visual Navigation device using Bluetooth Communication and Frequency Detection
         image: /images/projects/wayfinder/navigation.png
         featured:
           name: Read More

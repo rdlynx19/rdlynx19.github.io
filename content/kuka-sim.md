@@ -97,5 +97,5 @@ gives us the commanded end-effector twist \\(V\\) at every time step.
 
 ![image](/images/projects/kuka-sim/all-frames-bot.png)
 
-To turn the end-effector twist into commanded wheel and arm joint speeds, we use the pseduo-inverse of the mobile manipulator Jacobian \\(J_e(\theta)\\).
+To turn the end-effector twist into commanded wheel and arm joint speeds, we use the pseudo-inverse of the mobile manipulator Jacobian \\(J_e(\theta)\\).
 
