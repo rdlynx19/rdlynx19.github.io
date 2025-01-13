@@ -14,7 +14,7 @@ mathjax: true
 repoName: pythonRAMPAGE
 ---
 
-# Demo Videos
+## Demo Videos
 As a part of the NU MSR hackathon, we completed a Maze Solving challenge. This challenge was done in a team comprising of Joe Blom, Grayson Snyder, Catherine Maglione, and Pushkar Dave
 
 {{<youtube C1ZHhO6q5xQ>}}

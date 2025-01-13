@@ -42,9 +42,7 @@ December 2020 - May 2024
 ## Contact
 
 To contact me, please email to:
-pushkar@u.northwestern.edu
-
-I'm happy to chat about robots, volleyball, anime and anything else.
-
+pushkar@u.northwestern.edu \
+I'm happy to chat about robots, volleyball, anime and anything else.\
 For my resume, please refer to: [Pushkar's Resume](https://pushkardave.com/resume)
  

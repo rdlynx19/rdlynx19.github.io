@@ -479,7 +479,7 @@ params:
       
       - title: ESP32 Navigation Device 
         content: ESP32 based Visual Navigation device using Bluetooth Communication and Frequency Detection
-        image: /images/projects/wayfinder/navigation.png
+        image: /images/projects/wayfinder/wayfinder.gif
         featured:
           name: Read More
           link: /wayfinder
