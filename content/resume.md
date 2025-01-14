@@ -4,9 +4,6 @@ date: 2024-12-07
 draft: false
 author: "Pushkar Dave"
 tags:
-  - Python
-  - Dynamics
-  - Lagrangian Mechanics
 image: 
 description: ""
 toc: true
