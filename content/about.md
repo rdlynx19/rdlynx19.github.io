@@ -13,10 +13,18 @@ socialShare: false
 ## About Me
 
 <!-- ![image](/web2.jpg) -->
-<img src="/images/misc/web-temp.jpg" alt="drawing" width="500" height="700" style="margin-bottom: 15px;"/>
+<!-- <img src="/images/misc/web-temp.jpg" alt="drawing" width=500px style="margin-bottom: 15px;"/>
 
-
+<p align="right">
 Hi! I am an MS Robotics Student at Northwestern University. I am currently researching project ideas involving Multi-Robot SLAM. Previously, I worked as a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion. 
+</p> -->
+
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+    <img src="/images/misc/web-temp.jpg" alt="drawing" width="500px" style="margin-bottom: 15px;" />
+    <p align="left" style="margin: 0;">
+        Hi! I am an MS Robotics Student at Northwestern University. I am currently researching project ideas involving Multi-Robot SLAM. Previously, I worked as a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion.
+    </p>
+</div>
 
 ---
 
