@@ -60,7 +60,7 @@ Menus:
 
 params:
   title: "Pushkar's Portfolio"
-  description: Roboticist
+  description: MS Robotics @ Northwestern
   # staticPath: ""  # The path to serve the static files from
   favicon: "/headshot-modified.png"
 
