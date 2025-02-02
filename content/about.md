@@ -16,7 +16,7 @@ socialShare: false
 <aside class="aboutImg">
     <div class="aboutImg-content">
         <p align="left">
-            Hi! I am an MS Robotics Student at Northwestern University. I am currently working on <a href="https://github.com/rdlynx19/multi-robot-mapping.git">Collaborative Mapping </a>. Previously, I was a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion.<br>
+            Hi! I am an MS Robotics Student at Northwestern University. I am currently working on <a href="https://github.com/rdlynx19/multi-robot-mapping.git" target="_blank">Collaborative Mapping </a>. Previously, I was a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion.<br>
             My ultimate goal is to develop algorithms for the safe deployment of robots in dense human environments.
         </p>
     <img src="/images/misc/web-temp.jpg"  alt="drawing" />
