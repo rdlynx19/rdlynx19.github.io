@@ -33,7 +33,7 @@ The hardware setup includes the following components:
 - **Servo Motor-Controlled Hammer**: Executes the hitting action in the Whack-a-Mole game
 - **Whack-a-Mole Game Board**: A custom-built game board designed to allow precise control over its speed and provide feedback for debugging purposes  
 
-![image](/images/projects/franka-mole/Franka-setup.jpg)
+![image](/images/projects/franka-mole/setup.png)
 
 ---
 ## System Architecture
