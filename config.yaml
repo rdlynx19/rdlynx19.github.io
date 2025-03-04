@@ -343,19 +343,20 @@ params:
           url: https://github.com/rdlynx19/KUKAYouBotSim
        
 
-    - title: Quadrotor Control and Trajectory Generation
-      content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
-      image: /images/projects/quad-matlab/helix-quad.gif
+    - title: Collaborative Mapping using a Quadrotor and Quadruped
+      content: Building Occupancy Grids using RGBD odometry and 3D point clouds in a Multi-Robot setup
+      image: /images/projects/multi-robot/quad-viz.gif
       featured:
         name: Read More
-        link: /quad-trajectory
+        link: /multi-robot-mapping
       badges:
-        - "MATLAB"
-        - "Trajectory Generation"
-        - "Control"
+        - "C++"
+        - "ROS2"
+        - "Mapping"
+        - "Localization"
       links:
         - icon: fab fa-github
-          url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
+          url: https://github.com/rdlynx19/multi-robot-mapping
 
   # projects
   projects:
@@ -406,6 +407,19 @@ params:
       #   links:
       #     - icon: fab fa-github
       #       url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
+      - title: Quadrotor Control and Trajectory Generation
+        content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
+        image: /images/projects/quad-matlab/helix-quad.gif
+        featured:
+          name: Read More
+          link: /quad-trajectory
+        badges:
+          - "MATLAB"
+          - "Trajectory Generation"
+          - "Control"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
 
       - title: Multibody Dynamics Simulation
         content: Simulating the physics of a jack bouncing around in a box
