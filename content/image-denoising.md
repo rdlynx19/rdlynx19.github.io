@@ -1,5 +1,5 @@
 ---
-title: "Image Denoising using CNN"
+title: "Image Denoising using Convolutional Autoencoders"
 date: 2021-10-12
 draft: false
 author: "Pushkar Dave"
