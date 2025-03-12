@@ -345,7 +345,7 @@ params:
 
     - title: Collaborative Mapping using a Quadrotor and Quadruped
       content: Building Occupancy Grids using RGBD odometry and 3D point clouds in a Multi-Robot setup
-      image: /images/projects/multi-robot/quad-viz.gif
+      image: /images/projects/multi-robot/mrm-viz.gif
       featured:
         name: Read More
         link: /multi-robot-mapping
