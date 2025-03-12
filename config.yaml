@@ -345,7 +345,7 @@ params:
 
     - title: Collaborative Mapping using a Quadrotor and Quadruped
       content: Building Occupancy Grids using RGBD odometry and 3D point clouds in a Multi-Robot setup
-      image: /images/projects/multi-robot/quad-viz.gif
+      image: /images/projects/multi-robot/mrm-viz.gif
       featured:
         name: Read More
         link: /multi-robot-mapping
@@ -435,7 +435,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/jack-box-sim
 
-      - title: Image Denoising using CNN
+      - title: Image Denoising using Convolutional Autoencoders
         content: Implementation of an image-denoising autoencoder model on the MNIST dataset
         image: /images/projects/denoising/image-denoising.png
         featured:
