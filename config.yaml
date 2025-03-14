@@ -354,6 +354,7 @@ params:
         - "ROS2"
         - "Mapping"
         - "Localization"
+        - "Docker"
       links:
         - icon: fab fa-github
           url: https://github.com/rdlynx19/multi-robot-mapping
