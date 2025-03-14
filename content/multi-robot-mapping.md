@@ -22,16 +22,16 @@ The project focuses on developing a collaborative mapping system using a Quadrot
 The motivation behind this project is rooted in the idea that a combination of a quadrotor and a quadruped could complement each other’s capabilities in scenarios where the environment is completely unknown. The quadrotor’s ability to quickly cover large areas and the quadruped’s capability to navigate complex terrains and provide detailed mapping make this system suitable for applications like search and rescue, industrial inspections, or exploration in hazardous environments.
 {{<youtube lgYT0VuTbq0>}}
 
-The QAV 250 is equipped with an Oak RGB-Depth Camera, and Raspberry Pi 5 to autonomously fly around the environment and generate a 3D map using RTABMap package. This map is then transmitted to the Unitree Go 1 (equipped with the same setup), which localizes itself withing the map and refines it by adding finer details through further exploration. The Unitree Go 1 explores the environment through manual control, while ongoing work focuses on deploying frontier exploration for fully autonomous navigation and mapping.
+The QAV 250 is equipped with an Oak RGB-Depth Camera, and Raspberry Pi 5 to autonomously fly around the environment and generate a 3D map using RTABMap package. This map is then transmitted to the Unitree Go 1 (equipped with the same setup), which localizes itself within the map and refines it by adding finer details through further exploration. The Unitree Go 1 explores the environment through manual control, while ongoing work focuses on deploying frontier exploration for fully autonomous navigation and mapping.
 
 ---
 
 ## System Setup
-The below diagram describes the informaition flow of the system. It mentions the robots, sensors and the ROS2 packages and nodes that were used and written by me during this project. (more description)?
+The below diagram describes the informaition flow of the system. It mentions the robots, sensors and the ROS2 packages and nodes that were used and written by me during this project. 
 
 ![block diagram](/images/projects/multi-robot/MRM.drawio.png)
 
-Both the quadrotor and the quadruped are sequipped with Raspberry Pi 5, which runs the control and camera nodes. The camera data is streamed over a Data Distribution Service (DDS) setup to a remote Linux laptop. On the laptop, I use the RTABMap package to process the data, running its odometry and mapping nodes to build the 3D map in real time. This setup helps extend the robots' operational time by offloading computation to the laptop, reducing the load on their onboard LiPo batteries.
+Both the quadrotor and the quadruped are equipped with Raspberry Pi 5, which runs the control and camera nodes. The camera data is streamed over a Data Distribution Service (DDS) setup to a remote Linux laptop. On the laptop, I use the RTABMap package to process the data, running its odometry and mapping nodes to build the 3D map in real time. This setup helps extend the robots' operational time by offloading computation to the laptop, reducing the load on their onboard LiPo batteries.
 
 ---
 

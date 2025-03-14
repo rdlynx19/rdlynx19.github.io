@@ -311,6 +311,23 @@ params:
     enable: true
     title: "Featured Projects"
     items:
+
+    - title: Collaborative Mapping using a Quadrotor and Quadruped
+      content: Building Occupancy Grids using RGBD odometry and 3D point clouds in a Multi-Robot setup
+      image: /images/projects/multi-robot/mrm-viz.gif
+      featured:
+        name: Read More
+        link: /multi-robot-mapping
+      badges:
+        - "C++"
+        - "ROS2"
+        - "Mapping"
+        - "Localization"
+        - "Docker"
+      links:
+        - icon: fab fa-github
+          url: https://github.com/rdlynx19/multi-robot-mapping
+
     - title: Franka Plays Whack a Mole
       content: ROS2 Package to make the 7-DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
       image: /images/projects/franka-mole/franka.gif
@@ -343,21 +360,7 @@ params:
           url: https://github.com/rdlynx19/KUKAYouBotSim
        
 
-    - title: Collaborative Mapping using a Quadrotor and Quadruped
-      content: Building Occupancy Grids using RGBD odometry and 3D point clouds in a Multi-Robot setup
-      image: /images/projects/multi-robot/mrm-viz.gif
-      featured:
-        name: Read More
-        link: /multi-robot-mapping
-      badges:
-        - "C++"
-        - "ROS2"
-        - "Mapping"
-        - "Localization"
-        - "Docker"
-      links:
-        - icon: fab fa-github
-          url: https://github.com/rdlynx19/multi-robot-mapping
+
 
   # projects
   projects:
