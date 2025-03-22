@@ -1,6 +1,6 @@
 ---
 title: "Collaborative Mapping Using a Quadrotor and Quadruped"
-date: 2025-03-03
+date: 2025-03-14
 draft: false
 author: "Pushkar Dave"
 tags:
@@ -63,12 +63,13 @@ The quadruped setup consists of the following components:
 
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="/images/projects/multi-robot/dogSetupb.JPEG" alt="Top View" style="width: 50%; height: auto;"/>
+  <img src="/images/projects/multi-robot/dogSetupb.JPEG" alt="Top View" style="width: 48%; height: auto;"/>
   <img src="/images/projects/multi-robot/DogMount.png" alt="Bottom View" style="width: 48%; height: auto;"/>
 </div>
-<br>
 
 During the project, I designed and 3D-printed a bunch of custom parts to make everything fit together just right. One of the key pieces I made was a mount for the Oak-D Lite camera and the Raspberry Pi 5, specifically for the Unitree Go1. It took a few iterations to get it perfect, but the final version kept everything secure and stable, even while the robot was moving around.
+
+---
 
 ## Autonomous Drone Exploration
 
@@ -77,7 +78,11 @@ To fly a drone autonomously indoors, you need a reliable position estimate, eith
 
 After weighing the options, I decided to use the OptiTrack motion capture system for position estimation during autonomous flight. It’s worth noting that the motion capture system was only used to enable the drone’s autonomous flight—no odometry data from the drone was used during the mapping process. All maps were created using RTABMap, relying solely on RGB-D odometry from the onboard camera.
 
-![optiTrack](/images/projects/multi-robot/optiTrack.png)
+<div style="display: flex; justify-content: space-between;">
+  <img src="/images/projects/multi-robot/optiTrack.png" alt="Top View" style="width: 80%; height: auto;"/>
+</div>
+
+---
 
 ### Offboard Control
 
