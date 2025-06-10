@@ -368,19 +368,20 @@ params:
     title: "Other Projects"
     items:
 
-      - title: Trajectory Generation using Particle Swarm Optimization (PSO)
-        content: Solving the Traveling Salesman Problem (TSP) using PSO to generate quadrotor trajectories
-        image: /images/projects/pso-trajectory/pso-tracer.gif
+
+      - title: Knuckles - Music Instrument
+        content: A digital music instrument modeled after the Knuckle-style controllers
+        image: /images/projects/knuckles/playback.gif
         featured:
           name: Read More
-          link: /pso-trajectory
+          link: /knuckles
         badges:
-          - "C++"
-          - "Particle Swarm Optimization"
-          - "Trajectory Generation"
+          - "Arduino"
+          - "Max MSP"
+          - "Digital Music"
         links:
           - icon: fab fa-github
-            url: https://github.com/rdlynx19/pso-trajectory
+            url: https://github.com/rdlynx19/knuckles-max
 
       - title: Multibody Dynamics Simulation
         content: Simulating the physics of a jack bouncing around in a box
@@ -438,6 +439,20 @@ params:
       #     - icon: fab fa-github
       #       url: https://github.com/rdlynx19/taut-cable-2D-control 
       
+      - title: Trajectory Generation using Particle Swarm Optimization (PSO)
+        content: Solving the Traveling Salesman Problem (TSP) using PSO to generate quadrotor trajectories
+        image: /images/projects/pso-trajectory/pso-tracer.gif
+        featured:
+          name: Read More
+          link: /pso-trajectory
+        badges:
+          - "C++"
+          - "Particle Swarm Optimization"
+          - "Trajectory Generation"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/pso-trajectory
+      
       - title: Rapidly Exploring Random Trees
         content: Implementation of the RRT Path Finding Algorithm
         image: /images/projects/rrt/obstacle-rrt.gif
@@ -452,19 +467,19 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/RRT_Challenge
       
-      - title: Maze Solving using Wavefront Algorithm
-        content: Implementation of the Wavefront Path Finding Algorithm
-        image: /images/projects/wavefront/maze1.gif
-        featured:
-          name: Read More
-          link: /wavefront-maze
-        badges:
-          - "Python"
-          - "Path Planning"
-          - "BFS"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/maze-solving
+      # - title: Maze Solving using Wavefront Algorithm
+      #   content: Implementation of the Wavefront Path Finding Algorithm
+      #   image: /images/projects/wavefront/maze1.gif
+      #   featured:
+      #     name: Read More
+      #     link: /wavefront-maze
+      #   badges:
+      #     - "Python"
+      #     - "Path Planning"
+      #     - "BFS"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/maze-solving
       
       - title: ESP32 Navigation Device 
         content: ESP32 based Visual Navigation device using Bluetooth Communication and Frequency Detection
