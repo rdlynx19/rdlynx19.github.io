@@ -452,21 +452,35 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/pso-trajectory
-      
-      - title: Rapidly Exploring Random Trees
-        content: Implementation of the RRT Path Finding Algorithm
-        image: /images/projects/rrt/obstacle-rrt.gif
+
+      - title: SenseVR - SteamVR Compatible Headset
+        content: Custom Designed Virtual Reality Headset based on HadesVR
+        image: /images/projects/headset/headset2.JPG
         featured:
           name: Read More
-          link: /rrt-implementation
+          link: /headset
         badges:
-          - "Python"
-          - "Path Planning"
-          - "RRT"
+          - "Virtual Reality"
+          - "SteamVR"
+          - "Arduino"
         links:
           - icon: fab fa-github
-            url: https://github.com/rdlynx19/RRT_Challenge
-      
+            url: https://github.com/rdlynx19/SenseVR
+
+      # - title: Rapidly Exploring Random Trees
+      #   content: Implementation of the RRT Path Finding Algorithm
+      #   image: /images/projects/rrt/obstacle-rrt.gif
+      #   featured:
+      #     name: Read More
+      #     link: /rrt-implementation
+      #   badges:
+      #     - "Python"
+      #     - "Path Planning"
+      #     - "RRT"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/RRT_Challenge
+
       # - title: Maze Solving using Wavefront Algorithm
       #   content: Implementation of the Wavefront Path Finding Algorithm
       #   image: /images/projects/wavefront/maze1.gif
