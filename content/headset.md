@@ -46,7 +46,7 @@ The current hardware setup for the handheld controllers includes the following c
 
 *Note: The nRF24L01 module is not visible in these images*
 <div style="display: flex; justify-content: space-between;">
-  <img src="/images/projects/knuckles/Front.JPG" alt="Top View" style="width: 48%; height: auto;"/>
+  <img src="/images/projects/knuckles/Front.JPG" alt="Top View" style="width: 49%; height: auto;"/>
   <img src="/images/projects/knuckles/Side.JPG" alt="Side View" style="width: 48%; height: auto;"/>
 </div>
 <br>

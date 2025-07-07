@@ -397,6 +397,21 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/jack-box-sim
       
+      - title: Low Level Motor Controller 
+        content: PID Control of a DC Motor using a custom PIC32MX170F256B microcontroller dev-board
+        image: /images/projects/motor-controller/motor.gif
+        featured:
+          name: Read More
+          link: /motor-controller
+        badges:
+          - "C"
+          - "PIC32"
+          - "Mechatronics"
+          - "PID Control"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/pic32MotorControl
+
       - title: Quadrotor Control and Trajectory Generation
         content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
         image: /images/projects/quad-matlab/helix-quad.gif
@@ -494,20 +509,23 @@ params:
       #   links:
       #     - icon: fab fa-github
       #       url: https://github.com/rdlynx19/maze-solving
+
       
-      - title: ESP32 Navigation Device 
-        content: ESP32 based Visual Navigation device using Bluetooth Communication and Frequency Detection
-        image: /images/projects/wayfinder/wayfinder.gif
-        featured:
-          name: Read More
-          link: /wayfinder
-        badges:
-          - "C++"
-          - "ESP32"
-          - "Microcontrollers"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/ESP32-Wayfinder
+      
+
+      # - title: ESP32 Navigation Device 
+      #   content: ESP32 based Visual Navigation device using Bluetooth Communication and Frequency Detection
+      #   image: /images/projects/wayfinder/wayfinder.gif
+      #   featured:
+      #     name: Read More
+      #     link: /wayfinder
+      #   badges:
+      #     - "C++"
+      #     - "ESP32"
+      #     - "Microcontrollers"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/ESP32-Wayfinder
       
       
 
