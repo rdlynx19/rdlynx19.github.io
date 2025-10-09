@@ -1,6 +1,6 @@
 ---
 title: "Pushkar Dave"
-date: 2024-12-24
+date: 2025-10-09
 draft: false
 author: 
 tags:
@@ -12,16 +12,24 @@ socialShare: false
 ---
 ## About Me
 
+<div class="about-section">
+  <div class="about-text">
+    <p>
+      Hi! I am an MS Robotics Student at Northwestern University.
+      I am currently working on simulating locomotion for a
+      <a href="https://github.com/rdlynx19/HSA" target="_blank">Handed Shearing Auxetics (HSA)</a> robot.
+      Previously, I was a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion.
+      <br><br>
+      My ultimate goal is to develop algorithms for the safe deployment of robots in dense human environments.
+    </p>
+    Email: <a href="mailto:pushkar@u.northwestern.edu " target="_blank"> pushkar@u.northwestern.edu</a> <br>
+    Resume: <a href="https://pushkardave.com/resume" target="_blank"> Pushkar's Resume </a>
+  </div>
 
-<aside class="aboutImg">
-    <div class="aboutImg-content">
-        <p align="left">
-            Hi! I am an MS Robotics Student at Northwestern University. I am currently working on <a href="https://github.com/rdlynx19/multi-robot-mapping.git" target="_blank">Collaborative Mapping </a>. Previously, I was a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion.<br>
-            My ultimate goal is to develop algorithms for the safe deployment of robots in dense human environments.
-        </p>
-    <img src="/images/misc/web-temp.jpg"  alt="drawing" />
-    </div>
-</aside>
+  <div class="about-image">
+    <img src="/images/misc/web-3.jpg" alt="Pushkar Dave" />
+  </div>
+</div>
 
 ---
 
@@ -42,12 +50,5 @@ December 2020 - May 2024
 
 <br>
 
----
 
-## Contact
-
-To contact me, please email to:
-pushkar@u.northwestern.edu \
-I'm happy to chat about robots, volleyball, anime and anything else.\
-For my resume, please refer to: [Pushkar's Resume](https://pushkardave.com/resume)
  

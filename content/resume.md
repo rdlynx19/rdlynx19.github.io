@@ -1,6 +1,6 @@
 ---
 title: "Pushkar's Resume"
-date: 2024-12-07
+date: 2025-10-09
 draft: false
 author: "Pushkar Dave"
 tags:
