@@ -365,7 +365,7 @@ params:
   # projects
   projects:
     enable: true
-    title: "Other Projects"
+    title: "Project Gallery"
     items:
 
 
