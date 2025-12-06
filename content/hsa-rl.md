@@ -81,7 +81,7 @@ The physical robot was also capable of a twisting gait; however, despite extensi
 ## Reinforcement Learning for Locomotion
 
 ### Environment Design
-For the reinforcement learning pipeline, I chose to use the <a href="https://stable-baselines3.readthedocs.io/en/master/" target="_blank">Stable-Baselines3</a> library and spent time studying its MuJoCo examples to understand the expected structure and workflow.
+For the reinforcement learning pipeline, I chose to use the <a href="https://stable-baselines3.readthedocs.io/en/master/" target="_blank">Stable-Baselines3</a> library and spent time studying its MuJoCo examples to understand the expected structure and workflow. For the training policy, I used Proximal Policy Optimization (PPO) algorithm for its reliability and effectiveness in continous action spaces.
 
 I then implemented two custom Python classes. The first was a MuJoCo base class that wrapped the core MuJoCo API, providing methods to initialize, step through, and close the MuJoCo simulation. It also exposed additional functionality such as accessing the current system state, measuring contact forces, and updating the pose of static markers in the environment.
 
