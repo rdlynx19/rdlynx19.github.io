@@ -32,8 +32,10 @@ Handed Shearing Auxetic (HSA) actuators are soft, flexible structures that chang
 
 Each structure can be either left-handed or right-handed, which means it naturally twists in a different direction when it moves. By combining these opposite twists in a unit, we can create a variety of movement patterns and behaviors. 
 
+<div style="display: flex">
 <img src="/images/projects/hsa-rl/handedness.png" alt="Handedness View" style="width: 100%; height: auto;"/>
-
+</div>
+<br>
 
 The <a href="https://sites.northwestern.edu/roboticmatterlab/" target="_blank">Robotic Matter Lab</a> at Northwestern University has been developing a robot out of this structural arrangement. Specifically, four HSA modules with pairwise opposite handedness are combined, with continous rotation servo motors attached at each end. The resulting robot is shown in the images below.
 
@@ -45,116 +47,123 @@ The <a href="https://sites.northwestern.edu/roboticmatterlab/" target="_blank">R
 <br>
 
 ### Simulation Model
-![block diagram](/images/projects/hsa-rl/HSAModel.png)
 
-
-
-Both the quadrotor and the quadruped are equipped with Raspberry Pi 5, which runs the control and camera nodes. The camera data is streamed over a Data Distribution Service (DDS) setup to a remote Linux laptop. On the laptop, I use the RTABMap package to process the data, running its odometry and mapping nodes to build the 3D map in real time. This setup helps extend the robots' operational time by offloading computation to the laptop, reducing the load on their onboard LiPo batteries.
-
----
-
-## QAV 250
-The quadrotor setup consists of the following components:
-- Holybro QAV 250 Quadrotor Frame
-- PixHawk 6C Mini AutoPilot
-- Raspberry Pi 5 with Ubuntu Linux 24.04 and ROS2 Jazzy
-- Luxonis OakD-Lite RGB Depth Camera
-- 4S 2000mAh Lipo Battery
+The next challenge was to develop an approximation of the HSA structure that could reproduce its key behaviors while remaining simple enough for the MuJoCo physics engine to handle contact and dynamics efficiently. After several iterations, I settled on a representation built from an arrangement of cylinders and tendons in MuJoCo. This structure converts rotational motion at one end into axial extension or contraction through a central disc. The main tunable parameters were the tendon stiffness and the radius of the central disc. My target was to match the real HSA module’s extension of approximately 6 cm; the final model achieved extensions in the range of 4–4.5 cm.
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="/images/projects/multi-robot/DroneTop.JPEG" alt="Top View" style="width: 48%; height: auto;"/>
-  <img src="/images/projects/multi-robot/DroneBottom.JPEG" alt="Bottom View" style="width: 48%; height: auto;"/>
+  <img src="/images/projects/hsa-rl/hsaNoTable.png" alt="Block View" style="width: 55%; height: auto;"/>
+  <img src="/images/projects/hsa-rl/mujocoModel.png" alt="Sim View" style="width: 45%; height: auto;"/>
 </div>
 <br>
 
-The LiPo battery powered all components of the quadrotor, including the motors, autopilot, and the Raspberry Pi 5. Since the Raspberry Pi 5 requires a stable 5V, 5A power supply, a buck converter was used to step down the voltage from the 4S LiPo battery (16.8V to 14.8V) to the required 5V.
+The extension and contraction of the mechanism is controlled by the position servo motors in MuJoCo. They are made continous by setting their range to be -1000 \\(\pi\\) to +1000 \\(\pi\\). An example of contraction and extension can be seen below.
+
+<div style="display: flex">
+<img src="/images/projects/hsa-rl/extCont.gif" alt="Extension Contraction" style="width: 100%; height: 80%;"/>
+</div>
+<br>
 
 ---
 
-## Unitree Go 1
+## Replication of Standard Gaits
 
-The quadruped setup consists of the following components:
-- Unitree Go 1
-- Raspberry Pi 5 with Ubuntu Linux 24.04 and ROS2 Jazzy
-- Luxonix OakD-Lite RGB Depth Camera
-- 4S 1300mAh Lipo Battery
+To validate the simulated model against the real system, the next goal was to replicate the existing gaits observed in the physical robot. To achieve this, I developed a control API around MuJoCo that allowed me to directly command specific gaits in simulation. I also added functionality for initializing and closing the simulation, modifying contact parameters, and retrieving the robot’s state. The gaits I was able to reproduce reliably included:
 
+- Extension: Insert side by side gifs
+- Contraction: Insert side by side gifs
+- Bending: Insert side by side gifs
+- Crawling: Insert side by side gifs
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="/images/projects/multi-robot/dogSetupb.JPEG" alt="Top View" style="width: 48%; height: auto;"/>
-  <img src="/images/projects/multi-robot/DogMount.png" alt="Bottom View" style="width: 48%; height: auto;"/>
-</div>
-
-During the project, I designed and 3D-printed a bunch of custom parts to make everything fit together just right. One of the key pieces I made was a mount for the Oak-D Lite camera and the Raspberry Pi 5, specifically for the Unitree Go1. It took a few iterations to get it perfect, but the final version kept everything secure and stable, even while the robot was moving around.
+The physical robot was also capable of a twisting gait; however, despite extensive tuning, this mode could not be reproduced in my simulation due to inherent limitations in the structural approximation. The intention was then for the reinforcement learning phase to uncover alternative gaits that could provide similar advantages. With this in mind, I moved into the training phase.
 
 ---
 
-## Autonomous Drone Exploration
+## Reinforcement Learning for Locomotion
 
-### OptiTrack Motion Capture
-To fly a drone autonomously indoors, you need a reliable position estimate, either from onboard sensors or an external system like a motion capture setup. Since I was working with a 250mm quadrotor frame, I had to carefully balance space and weight constraints. Onboard visual-inertial odometry (VIO) was an option, but running a VIO framework on the Raspberry Pi 5 would have consumed most of its compute power, leaving little room for other critical tasks like communication nodes.
+### Environment Design
+For the reinforcement learning pipeline, I chose to use the <a href="https://stable-baselines3.readthedocs.io/en/master/" target="_blank">Stable-Baselines3</a> library and spent time studying its MuJoCo examples to understand the expected structure and workflow.
 
-After weighing the options, I decided to use the OptiTrack motion capture system for position estimation during autonomous flight. It’s worth noting that the motion capture system was only used to enable the drone’s autonomous flight—no odometry data from the drone was used during the mapping process. All maps were created using RTABMap, relying solely on RGB-D odometry from the onboard camera.
+I then implemented two custom Python classes. The first was a MuJoCo base class that wrapped the core MuJoCo API, providing methods to initialize, step through, and close the MuJoCo simulation. It also exposed additional functionality such as accessing the current system state, measuring contact forces, and updating the pose of static markers in the environment.
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="/images/projects/multi-robot/optiTrack.png" alt="Top View" style="width: 80%; height: auto;"/>
-</div>
+The second class extended this base to include all reinforcement-learning–specific components, including computing rewards and penalties, constructing observations, updating the info dictionary, and advancing the environment by one RL timestep.
+
+==Insert Block diagram for RL environment==
+
+The final observation space and action space for my model looked like this:
+```
+Observation Space = {
+  "Motor Positions": 8 values (np.float32),
+  "Motor Velocities: 8 values (np.float32),
+  "COM Position": 2 values (x, y),
+  "COM Velocity": 3 values (v_x, v_y, v_z),
+  "Distance To Goal": 1 value (float32),
+  "Vector To Goal": 2 values (n_x, n_y)
+}
+
+Action Space = spaces.Box(low=-1.0, high=+1.0, shape=8, dtype=np.float32)
+```
+An important design choice was to use position control in the reinforcement learning environment. Initially, the action space consisted of direct position setpoints for each motor, while the required torques were handled internally by MuJoCo’s built-in PD controller. In the final environment, I instead used position increments as the action output. This change was necessary because the position limits were removed, allowing the motors to behave as continuous-rotation servos.
+
+The action space is normalized such that a value of +1.0 corresponds to an increase of 0.1785 radians (approximately 10°), while −1.0 corresponds to a decrease of the same amount. All actions are scaled by 0.1785 radians and applied as increments to the current motor positions.
+
+### Reward Function Design
+A significant portion of my reinforcement learning work involved designing the reward functions and tuning their weights. This step was critical, as both the success and stability of training depend heavily on the structure of the reward. In the initial versions, I rewarded forward velocity while penalizing excessive contact forces and overly large actions.
+
+##### Initial Reward Design
+
+| Parameter               | Value     | Description |
+|-------------------------|-----------|-------------| 
+| `forward_reward_weight` | 1.0      | Rewards velocity in any direction |
+| `ctrl_cost_weight`      | 0.01     | Penalizes large control inputs |
+| `contact_cost_weight`   | 0.00005  | Penalizes large contact forces |
+
+
+In the absence of a specific goal position, the robot learned to explore its environment and ultimately discovered a rolling locomotion mode. This behavior is also one of the standard gaits of the physical robot.
+
+=== Insert gif of the robot rolling around + driving mode in real robot ===
+
+However, it became clear that rewarding velocity alone would not encourage the discovery of new gaits. To address this, I introduced a goal position marker into the environment, which was also reflected in the observation space. This gave the robot a concrete target to move toward, requiring a shift in the reward design - from simply encouraging speed to promoting progress toward the goal.
+
+I introduced a distance-based reward to encourage movement toward the goal position. Joint velocities and accelerations were penalized to prevent excessive or unstable motion. I also enforced a mechanical constraint between the motors to preserve the handedness pattern of the HSA modules, which was otherwise disrupted by allowing continuous motor rotation.
+
+Additionally, a small survival bonus was granted at each timestep, while an early-termination penalty was applied if an episode ended prematurely. This penalty was skipped if the robot reached the goal, in which case a large positive reward was issued to reinforce the desired behavior.
+
+##### Final Reward Design
+
+| Parameter                  | Value   | Description |
+|----------------------------|---------|-------------|
+| `distance_reward_weight`   | 10.0    | Rewards movement towards goal |
+| `forward_reward_weight`    | 6.0     | Encourages velocity towards goal |
+| `ctrl_cost_weight`      | 0.001   | Penalizes large control inputs |
+| `acc_cost_weight`          | 0.00001 | Penalizes large joint accelerations |
+| `joint_vel_cost_weight`    | 0.0005  | Penalizes large joint velocities |
+| `constraint_cost_weight` | 0.05    | Enforces handedness based motor coupling |
+| `alive_bonus`             | 0.03    | Survival bonus |
+| `early_termination_penalty` | 0.1    | Penalizes premature episode termination |
+
+
+### Results
+
+On flat terrain the robot performed ...
+
+
+
+
+
 
 ---
 
-### Offboard Control
-
-To enable the drone to explore the environment autonomously, I developed a custom ROS2 C++ package for offboard control. This package runs onboard the Raspberry Pi 5 and communicates with the PixHawk 6C Mini flight controller via serial communication using the uXRCE-DDS client. The package includes custom services to handle essential drone operations, such as arming, disarming, takeoff, and landing.
-
-Additionally, I implemented a function to generate polygonal trajectories, allowing the drone to systematically explore the environment and map its features.
-
-<div style="display: flex; justify-content: space-between;">
-  <img src="/images/projects/multi-robot/shrunkPolyTraj.gif" alt="Top View" style="width: 80%; height: auto;"/>
-</div>
-
----
-
-## RTABMap 
-
-The RTABMap package in ROS2 was used to process the RGB and Depth data from the Oak-D Lite camera. Using the IMU data from the camera, loop closure and graph optimization, the map remained consistent and accurate, even as the drone and quadruped explored new areas. RTABMap also provided the occupancy grid data that powered the frontier exploration algorithm, making it critical for both mapping and localization.
-
-### RGBD Odometry 
-RTABMap estimates odometry by extracting features using an algorithm like Speeded-UP Robust Feature (SURF). By matching features between consecutive frames and incorporating IMU data from the camera, it determines the camera's movement. Using these matched features along with depth information, the package computes the relative transformation between frames. This odometry output is then used to track the drone's position and orientation as it navigates through the map.
-
-An example of RTABMap tracking features between images captured at different times is shown here.
-
-<div style="display: flex; justify-content: space-between;">
-  <img src="/images/projects/multi-robot/rtabmapViz.png" alt="Top View" style="width: 80%; height: auto;"/>
-</div>
-
-### 3D Mapping
-Once odometry is established, RTABMap constructs a point cloud of the environment using RGB-D data. As new frames are processed, their point clouds are aligned with the existing map based on odometry data. To correct for accumulated errors, loop closure is used to optimize the entire map and mitigate drift. The map is updated incrementally as new data is processed, allowing RTAB-Map to efficiently handle large environments by storing and updating only the most relevant parts in memory.
-
-<div style="display: flex; justify-content: space-between;">
-  <img src="/images/projects/multi-robot/3DPointcloud.png" alt="Top View" style="width: 80%; height: auto;"/>
-</div>
-
----
-## Frontier Exploration for Unitree Go 1
-
-To recall, the system works in two phases: first, the QAV 250 drone explores the environment by following a polygonal trajectory, creating a sparse 3D map using RTABMap. This map is then passed to the Unitree Go1 quadruped, which localizes itself and refines the map by adding more details. Currently, the quadruped’s exploration is manual (it is teleoperated using a joystick), but I am working towards making the exploration autonomous.
-
-To achieve this, I developed a frontier exploration algorithm in ROS2 C++. It analyzes the map from RTABMap, identifies unexplored areas (frontiers), and sends the quadruped to explore them. I tested the algorithm in simulation by moving the Oak-D Lite camera around manually and visualizing the frontier goals in RViz. 
-<div style="display: flex; justify-content: space-between;">
-  <img src="/images/projects/multi-robot/extractFrontier.gif" alt="Top View" style="width: 80%; height: auto;"/>
-</div>
-
----
 ## Future Work
 
 With more time, I would like to add the following functionalities to this project:
-- Deploy autonomous exploration on the Unitree Go1 using the Unitree ROS2 SDK.
-- Enable simultaneous exploration, where the quadrotor and quadruped work together in real time for faster and more efficient mapping.
+- Support anisotropic friction
+  - Incorporate directional friction directly into the model, rather than adjusting it dynamically, to enable state-independent behavior.
+- Build a Sim2Real pipeline
+  - Deploy the trained policies on the physical robot to transfer simulation results to the real world.
 
 ---
 
 ## Acknowledgements
 
 This project is part of my **Master of Science in Robotics** at **Northwestern University**. 
-Thank you to Prof. Paul Umbanhowar for his guidance and support throughout the project, his feedback was incredibly helpful. Special thanks to Drew Curtis for helping me with the OptiTrack system, which made the autonomous drone flight possible.
-
+Thank you to Prof. Ryan Truby, Prof. Matthew Elwin, and Dr. Taekyoung Kim for the helpful guidance and support throughout their project. 
