@@ -69,10 +69,29 @@ The extension and contraction of the mechanism is controlled by the position ser
 
 To validate the simulated model against the real system, the next goal was to replicate the existing gaits observed in the physical robot. To achieve this, I developed a control API around MuJoCo that allowed me to directly command specific gaits in simulation. I also added functionality for initializing and closing the simulation, modifying contact parameters, and retrieving the robot’s state. The gaits I was able to reproduce reliably included:
 
-- Extension: Insert side by side gifs
-- Contraction: Insert side by side gifs
-- Bending: Insert side by side gifs
-- Crawling: Insert side by side gifs
+**Extension & Contraction**: In both demos, one block is constrained in place while the other is free to expand and contract according to the commanded motor inputs.
+  
+  <div style="display: flex; justify-content: space-between;">
+    <img src="/images/projects/hsa-rl/sideExtCont.gif" alt="Sim View" style="width: 48%; height: auto;"/>
+    <img src="/images/projects/hsa-rl/sideRealExtCont.gif" alt="Real View" style="width: 48%; height: auto;"/>
+  </div>
+  <br>
+
+**Bending**: Bending enables the robot to extend sideways and is particularly useful for in-place rotation. However, fully capturing its capability in simulation remains challenging. Both demonstrations are sped up 2×.
+
+  <div style="display: flex; justify-content: space-between;">
+    <img src="/images/projects/hsa-rl/sidBending.gif" alt="Sim View" style="width: 48%; height: auto;"/>
+    <img src="/images/projects/hsa-rl/sideRealBending.gif" alt="Real View" style="width: 48%; height: auto;"/>
+  </div>
+  <br>
+
+**Crawling**: Crawling is achieved through rapid cycles of extension and contraction. On the physical robot, specially designed fins provide anisotropic friction along a single axis, with different coefficients in the positive and negative directions, enabling an inchworm-style motion. However, MuJoCo does not natively support anisotropic friction along a single axis. To address this, I implemented a stateful workaround that dynamically adjusts the friction coefficient based on the robot’s direction of travel. Below are demonstrations of the crawling mode in both simulation and on the real robot, with both videos sped up 2×.
+
+  <div style="display: flex; justify-content: space-between;">
+    <img src="/images/projects/hsa-rl/sideCrawl.gif" alt="Sim View" style="width: 48%; height: auto;"/>
+    <img src="/images/projects/hsa-rl/sideRealCrawl.gif" alt="Real View" style="width: 48%; height: auto;"/>
+  </div>
+  <br>
 
 The physical robot was also capable of a twisting gait; however, despite extensive tuning, this mode could not be reproduced in my simulation due to inherent limitations in the structural approximation. The intention was then for the reinforcement learning phase to uncover alternative gaits that could provide similar advantages. With this in mind, I moved into the training phase.
 
@@ -120,7 +139,11 @@ A significant portion of my reinforcement learning work involved designing the r
 
 In the absence of a specific goal position, the robot learned to explore its environment and ultimately discovered a rolling locomotion mode. This behavior is also one of the standard gaits of the physical robot.
 
-=== Insert gif of the robot rolling around + driving mode in real robot ===
+<div style="display: flex; justify-content: space-between;">
+    <img src="/images/projects/hsa-rl/sideDriving.gif" alt="Sim View" style="width: 48%; height: auto;"/>
+    <img src="/images/projects/hsa-rl/sidRealDriving.gif" alt="Real View" style="width: 48%; height: auto;"/>
+  </div>
+  <br>
 
 However, it became clear that rewarding velocity alone would not encourage the discovery of new gaits. To address this, I introduced a goal position marker into the environment, which was also reflected in the observation space. This gave the robot a concrete target to move toward, requiring a shift in the reward design - from simply encouraging speed to promoting progress toward the goal.
 
@@ -144,9 +167,12 @@ Additionally, a small survival bonus was granted at each timestep, while an earl
 
 ### Results
 
-On flat terrain the robot performed ...
+I began training on flat terrain, tasking the robot with navigating to a goal position. I implemented a curriculum that gradually increased the goal distance over time. Initially, goals were sampled within a 2.0 m radius. Once the robot achieved a success rate above 75%, this range was expanded to 2.3 m, and continued increasing until it reached the 4.5 m bounds of the simulated environment. After 60 M timesteps, the robot was able to reach targets up to 4.2 m away. Some successful runs are shown below.
 
-
+<video controls autoplay loop muted playsinline width="100%">
+  <source src="/images/projects/hsa-rl/flat.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 
