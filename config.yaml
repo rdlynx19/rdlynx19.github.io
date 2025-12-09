@@ -312,6 +312,22 @@ params:
     title: "Featured Projects"
     items:
 
+    - title: Emergent Locomotion in a Handed Shearing Auxetic (HSA) Actuated Robot
+      content: MuJoCo based HSA actuation model, locomotion primitives and autonomous gait emergence through RL
+      image: /images/projects/hsa-rl/hsaNavigation.gif
+      featured:
+        name: Read More
+        link: /hsa-rl
+      badges:
+        - "Python"
+        - "Reinforcement Learning"
+        - "MuJoCo"
+        - "Simulation"
+        - "Modeling"
+      links:
+        - icon: fab fa-github
+          url: https://github.com/rdlynx19/hsa
+
     - title: Collaborative Mapping using a Quadrotor and Quadruped
       content: Building Occupancy Grids using RGBD odometry and 3D point clouds in a Multi-Robot setup
       image: /images/projects/multi-robot/mrm-viz.gif
