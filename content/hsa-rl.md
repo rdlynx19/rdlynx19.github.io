@@ -104,9 +104,12 @@ For the reinforcement learning pipeline, I chose to use the <a href="https://sta
 
 I then implemented two custom Python classes. The first was a MuJoCo base class that wrapped the core MuJoCo API, providing methods to initialize, step through, and close the MuJoCo simulation. It also exposed additional functionality such as accessing the current system state, measuring contact forces, and updating the pose of static markers in the environment.
 
-The second class extended this base to include all reinforcement-learning–specific components, including computing rewards and penalties, constructing observations, updating the info dictionary, and advancing the environment by one RL timestep.
+The second class extended this base to include all reinforcement-learning–specific components, including computing rewards and penalties, constructing observations, updating the info dictionary, and advancing the environment by one RL timestep. 
 
-==Insert Block diagram for RL environment==
+<div style="display: flex; ">
+    <img src="/images/projects/hsa-rl/HSARLBlock.png" alt="Block Diagram" style="width: auto; height: auto;"/>
+  </div>
+  <br>
 
 The final observation space and action space for my model looked like this:
 ```
