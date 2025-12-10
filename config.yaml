@@ -314,7 +314,7 @@ params:
 
     - title: Emergent Locomotion in a Handed Shearing Auxetic (HSA) Actuated Robot
       content: MuJoCo based HSA actuation model, locomotion primitives and autonomous gait emergence through RL
-      image: /images/projects/hsa-rl/hsaNavigation.gif
+      image: /images/projects/hsa-rl/Inchworm.gif
       featured:
         name: Read More
         link: /hsa-rl
