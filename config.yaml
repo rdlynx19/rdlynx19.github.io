@@ -359,21 +359,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/ME495-EmbeddedSystems/finalproject-whack-a-mole
 
-    - title: Feedback Control of Omnidirectional Mobile Manipulator 
-      content: Controlling a KUKA YouBot to pick and place a cube in CoppeliaSim
-      image: /images/projects/kuka-sim/you-bot.gif
-      featured:
-        name: Read More
-        link: /kuka-sim
-      badges:
-        - "Python"
-        - "Kinematics"
-        - "CoppeliaSim"
-        - "Trajectory Generation"
-        - "Motion Planning"
-      links:
-        - icon: fab fa-github
-          url: https://github.com/rdlynx19/KUKAYouBotSim
+    
        
 
 
@@ -383,7 +369,21 @@ params:
     enable: true
     title: "Project Gallery"
     items:
-
+      - title: Feedback Control of Omnidirectional Mobile Manipulator 
+        content: Controlling a KUKA YouBot to pick and place a cube in CoppeliaSim
+        image: /images/projects/kuka-sim/you-bot.gif
+        featured:
+          name: Read More
+          link: /kuka-sim
+        badges:
+          - "Python"
+          - "Kinematics"
+          - "CoppeliaSim"
+          - "Trajectory Generation"
+          - "Motion Planning"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/KUKAYouBotSim
 
       - title: Knuckles - Music Instrument
         content: A digital music instrument modeled after the Knuckle-style controllers
@@ -484,19 +484,19 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/pso-trajectory
 
-      - title: SenseVR - SteamVR Compatible Headset
-        content: Custom Designed Virtual Reality Headset based on HadesVR
-        image: /images/projects/headset/headset2.JPG
-        featured:
-          name: Read More
-          link: /headset
-        badges:
-          - "Virtual Reality"
-          - "SteamVR"
-          - "Arduino"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/SenseVR
+      # - title: SenseVR - SteamVR Compatible Headset
+      #   content: Custom Designed Virtual Reality Headset based on HadesVR
+      #   image: /images/projects/headset/headset2.JPG
+      #   featured:
+      #     name: Read More
+      #     link: /headset
+      #   badges:
+      #     - "Virtual Reality"
+      #     - "SteamVR"
+      #     - "Arduino"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/SenseVR
 
       # - title: Rapidly Exploring Random Trees
       #   content: Implementation of the RRT Path Finding Algorithm
