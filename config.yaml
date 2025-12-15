@@ -326,7 +326,7 @@ params:
         - "Modeling"
       links:
         - icon: fab fa-github
-          url: https://github.com/rdlynx19/hsa
+          url: https://github.com/rdlynx19/EmergentHSALocomotion
 
     - title: Collaborative Mapping using a Quadrotor and Quadruped
       content: Building Occupancy Grids using RGBD odometry and 3D point clouds in a Multi-Robot setup

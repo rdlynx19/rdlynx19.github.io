@@ -166,7 +166,18 @@ Additionally, a small survival bonus was granted at each timestep, while an earl
 | `constraint_cost_weight` | 0.05    | Enforces handedness based motor coupling |
 | `alive_bonus`             | 0.03    | Survival bonus |
 | `early_termination_penalty` | 0.1    | Penalizes premature episode termination |
+ 
+With these weights I trained on two different terrains, a flat ground and a corridor. The reward plots are shown, and the evalutation videos are in the next section.
 
+<div style="display: flex; ">
+    <img src="/images/projects/hsa-rl/flatReward.png" alt="Flat Reward" style="width: auto; height: auto;"/>
+  </div>
+  <br>
+
+<div style="display: flex; ">
+    <img src="/images/projects/hsa-rl/corridorReward.png" alt="Corridor Reward" style="width: auto; height: auto;"/>
+  </div>
+  <br>
 
 ### Results
 
@@ -177,8 +188,12 @@ I began training on flat terrain, tasking the robot with navigating to a goal po
   Your browser does not support the video tag.
 </video>
 
+Another notable result emerged in the corridor terrain, where the robot was tasked with moving along a narrow passage. Using only a single HSA unit, the robot exhibited a distinctive wiggling motion. Because this mode of locomotion is relatively slow, the goal position was placed close to the robot.
 
-
+<video controls autoplay loop muted playsinline width="100%">
+  <source src="/images/projects/hsa-rl/Inchworm.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
