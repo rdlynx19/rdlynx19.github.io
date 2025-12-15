@@ -210,4 +210,4 @@ With more time, I would like to add the following functionalities to this projec
 ## Acknowledgements
 
 This project is part of my **Master of Science in Robotics** at **Northwestern University**. 
-Thank you to Prof. Ryan Truby, Prof. Matthew Elwin, and Dr. Taekyoung Kim for the helpful guidance and support throughout their project. 
+Thank you to Prof. Ryan Truby, Prof. Matthew Elwin, and Dr. Taekyoung Kim for their valuable guidance and support throughout their project. I also thank An Nguyen for her thought-provoking contributions.
