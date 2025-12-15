@@ -580,7 +580,7 @@ params:
 
   # Single pages like blog and post
   singlePages:
-    socialShare: True
+    socialShare: true
     readTime:
       enable: false
       content: "min read"

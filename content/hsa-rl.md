@@ -14,6 +14,7 @@ description: ""
 toc: true
 mathjax: true
 repoName: hsa
+
 ---
 ## Overview
 
@@ -22,6 +23,8 @@ This project focused on modeling, simulating, and developing locomotion gaits fo
 1. **Modeling a physics-informed approximation** of the HSA actuators to capture their deformation and actuation behavior in simulation.
 2. **Replicating existing gaits** observed on the physical robot to validate that the simulated system reflected real-world dynamics.
 3. **Training the robot** across various terrains, using **reinforcement learning** - enabling the emergence of new and unintuitive locomotion strategies.
+
+{{<youtube oxQmjtmCshg>}}
 
 ---
 
