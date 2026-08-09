@@ -81,8 +81,8 @@ params:
   animate: true
 
   theme:
-    disableThemeToggle: true
-    defaultTheme: "light" # dark
+    disableThemeToggle: false
+    defaultTheme: "auto" # light | dark | auto - "light"/"dark" force-reset the toggle on every page load
 
   font:
     fontSize: 1rem # default: 1rem
@@ -92,23 +92,23 @@ params:
 
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
+  color:
+    textColor: "#1a1510"
+    secondaryTextColor: "#5a5045"
+    textLinkColor: "#dc2626"
+    backgroundColor: "#f5f0e8"
+    secondaryBackgroundColor: "#dc26261a"
+    primaryColor: "#dc2626"
+    secondaryColor: "#ece5d9"
 
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
+    darkmode:
+      textColor: "#fafaf9"
+      secondaryTextColor: "#a8a29e"
+      textLinkColor: "#dc2626"
+      backgroundColor: "#0c0a09"
+      secondaryBackgroundColor: "#dc26261a"
+      primaryColor: "#dc2626"
+      secondaryColor: "#1c1917"
 
   # If you want to customize the menu, you can change it here
   navbar:
