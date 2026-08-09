@@ -40,7 +40,7 @@ Using Particle Swarm Optimization (PSO), we can iteratively refine the solution 
 Particle Swarm Optimization is a bio-inspired optimization algorithm that mimics the collective behavior of swarms, such as birds flocking or fish schooling, to solve complex problems. The algorithm works by iteratively improving a set of candidate solutions (called particles) based on their own best-known position and the best-known position of the entire swarm.
 
 The PSO algorithm updates the velocity and position of each particle using the following equations:
-$$v_i(t+1) = w * v_i(t) + c_1 * r_1 * (p_{best_i} - x_i(t)) + c_2 * r_2 * (g_{best} - x_i(t))$$
+$$\begin{aligned} v_i(t+1) = &\ w * v_i(t) \\\\ &+ c_1 * r_1 * (p_{best_i} - x_i(t)) \\\\ &+ c_2 * r_2 * (g_{best} - x_i(t)) \end{aligned}$$
 $$x_i(t+1) = x_i(t) + v_i(t+1)$$
 
 
