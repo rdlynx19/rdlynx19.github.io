@@ -30,8 +30,8 @@ Menus:
       url: /about
       weight: 2
     - identifier: github
-      name: Github
-      title: github Link
+      name: GitHub
+      title: GitHub Link
       url: https://github.com/rdlynx19
       weight: 2
     - identifier: resume
@@ -81,8 +81,8 @@ params:
   animate: true
 
   theme:
-    disableThemeToggle: true
-    defaultTheme: "light" # dark
+    disableThemeToggle: false
+    defaultTheme: "auto" # light | dark | auto - "light"/"dark" force-reset the toggle on every page load
 
   font:
     fontSize: 1rem # default: 1rem
@@ -93,22 +93,22 @@ params:
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
   color:
-    textColor: "#1b2a2f"
-    secondaryTextColor: "#55707a"
-    textLinkColor: "#0f766e"
-    backgroundColor: "#eef3f2"
-    secondaryBackgroundColor: "#0f766e1a"
-    primaryColor: "#0f766e"
-    secondaryColor: "#ffffff"
+    textColor: "#1a1510"
+    secondaryTextColor: "#5a5045"
+    textLinkColor: "#dc2626"
+    backgroundColor: "#f5f0e8"
+    secondaryBackgroundColor: "#dc26261a"
+    primaryColor: "#dc2626"
+    secondaryColor: "#ece5d9"
 
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
+    darkmode:
+      textColor: "#fafaf9"
+      secondaryTextColor: "#a8a29e"
+      textLinkColor: "#dc2626"
+      backgroundColor: "#0c0a09"
+      secondaryBackgroundColor: "#dc26261a"
+      primaryColor: "#dc2626"
+      secondaryColor: "#1c1917"
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -308,11 +308,11 @@ params:
   #       url: https://example.com
 
   featured_projects:
-    enable: true
+    enable: false
     title: "Featured Projects"
     items:
 
-    - title: Emergent Locomotion in a Handed Shearing Auxetic (HSA) Actuated Robot
+    - title: Emergent Locomotion in a Handed Shearing Auxetic Actuated Robot
       content: MuJoCo based HSA actuation model, locomotion primitives and autonomous gait emergence through RL
       image: /images/projects/hsa-rl/Inchworm.gif
       featured:
@@ -359,17 +359,64 @@ params:
           - icon: fab fa-github
             url: https://github.com/ME495-EmbeddedSystems/finalproject-whack-a-mole
 
-    
-       
+
+
 
 
 
   # projects
   projects:
     enable: true
-    title: "Project Gallery"
+    title: "Projects"
     items:
-      - title: Feedback Control of Omnidirectional Mobile Manipulator 
+      - title: Emergent Locomotion in a Handed Shearing Auxetic Actuated Robot
+        content: MuJoCo based HSA actuation model, locomotion primitives and autonomous gait emergence through RL
+        image: /images/projects/hsa-rl/Inchworm.gif
+        featured:
+          name: Read More
+          link: /hsa-rl
+        badges:
+          - "Python"
+          - "Reinforcement Learning"
+          - "MuJoCo"
+          - "Simulation"
+          - "Modeling"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/EmergentHSALocomotion
+
+      - title: Collaborative Mapping using a Quadrotor and Quadruped
+        content: Building Occupancy Grids using RGBD odometry and 3D point clouds in a Multi-Robot setup
+        image: /images/projects/multi-robot/mrm-viz.gif
+        featured:
+          name: Read More
+          link: /multi-robot-mapping
+        badges:
+          - "C++"
+          - "ROS2"
+          - "Mapping"
+          - "Localization"
+          - "Docker"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/multi-robot-mapping
+
+      - title: Franka Plays Whack a Mole
+        content: ROS2 Package to make the 7-DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
+        image: /images/projects/franka-mole/franka.gif
+        featured:
+          name: Read More
+          link: /franka-whack-a-mole
+        badges:
+          - "Python"
+          - "ROS2"
+          - "MoveIt2"
+          - "OpenCV"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ME495-EmbeddedSystems/finalproject-whack-a-mole
+
+      - title: Feedback Control of Omnidirectional Mobile Manipulator
         content: Controlling a KUKA YouBot to pick and place a cube in CoppeliaSim
         image: /images/projects/kuka-sim/you-bot.gif
         featured:
@@ -385,7 +432,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/KUKAYouBotSim
 
-      - title: Knuckles - Music Instrument
+      - title: Knuckles - Music Instrument with Max MSP
         content: A digital music instrument modeled after the Knuckle-style controllers
         image: /images/projects/knuckles/playback.gif
         featured:
@@ -399,7 +446,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/knuckles-max
 
-      - title: Multibody Dynamics Simulation
+      - title: Multibody Dynamics Simulation with Lagrangian Equations
         content: Simulating the physics of a jack bouncing around in a box
         image: /images/projects/jack-sim/jack-sim.gif
         featured:
@@ -413,7 +460,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/jack-box-sim
       
-      - title: Low Level Motor Controller 
+      - title: Low Level DC Motor Controller with PIC32 
         content: PID Control of a DC Motor using a custom PIC32MX170F256B microcontroller dev-board
         image: /images/projects/motor-controller/motor.gif
         featured:
@@ -470,7 +517,7 @@ params:
       #     - icon: fab fa-github
       #       url: https://github.com/rdlynx19/taut-cable-2D-control 
       
-      - title: Trajectory Generation using Particle Swarm Optimization (PSO)
+      - title: Trajectory Generation using Particle Swarm Optimization
         content: Solving the Traveling Salesman Problem (TSP) using PSO to generate quadrotor trajectories
         image: /images/projects/pso-trajectory/pso-tracer.gif
         featured:

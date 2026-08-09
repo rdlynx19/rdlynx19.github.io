@@ -6,7 +6,7 @@ author:
 tags:
 image: 
 description: ""
-toc: true
+toc: false
 mathjax: true
 socialShare: false
 ---
