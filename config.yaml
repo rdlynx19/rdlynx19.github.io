@@ -81,8 +81,8 @@ params:
   animate: true
 
   theme:
-    disableThemeToggle: false
-    defaultTheme: "auto" # light | dark | auto - "light"/"dark" force-reset the toggle on every page load
+    disableThemeToggle: true
+    defaultTheme: "light" # light | dark | auto - "light"/"dark" force-reset the toggle on every page load
 
   font:
     fontSize: 1rem # default: 1rem
@@ -432,34 +432,6 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/KUKAYouBotSim
 
-      - title: Knuckles - Music Instrument with Max MSP
-        content: A digital music instrument modeled after the Knuckle-style controllers
-        image: /images/projects/knuckles/playback.gif
-        featured:
-          name: Read More
-          link: /knuckles
-        badges:
-          - "Arduino"
-          - "Max MSP"
-          - "Digital Music"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/knuckles-max
-
-      - title: Multibody Dynamics Simulation with Lagrangian Equations
-        content: Simulating the physics of a jack bouncing around in a box
-        image: /images/projects/jack-sim/jack-sim.gif
-        featured:
-          name: Read More
-          link: /jack-box-simulation
-        badges:
-          - "Python"
-          - "Dynamics"
-          - "Lagrangian Mechanics"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/jack-box-sim
-      
       - title: Low Level DC Motor Controller with PIC32 
         content: PID Control of a DC Motor using a custom PIC32MX170F256B microcontroller dev-board
         image: /images/projects/motor-controller/motor.gif
@@ -474,6 +446,38 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/pic32MotorControl
+
+      - title: Multibody Dynamics Simulation with Lagrangian Equations
+        content: Simulating the physics of a jack bouncing around in a box
+        image: /images/projects/jack-sim/jack-sim.gif
+        featured:
+          name: Read More
+          link: /jack-box-simulation
+        badges:
+          - "Python"
+          - "Dynamics"
+          - "Lagrangian Mechanics"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/jack-box-sim
+
+      - title: Knuckles - Music Instrument with Max MSP
+        content: A digital music instrument modeled after the Knuckle-style controllers
+        image: /images/projects/knuckles/playback.gif
+        featured:
+          name: Read More
+          link: /knuckles
+        badges:
+          - "Arduino"
+          - "Max MSP"
+          - "Digital Music"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/knuckles-max
+
+      
+      
+      
 
       - title: Quadrotor Control and Trajectory Generation
         content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
