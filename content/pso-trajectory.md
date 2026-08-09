@@ -44,13 +44,15 @@ $$v_i(t+1) = w * v_i(t) + c_1 * r_1 * (p_{best_i} - x_i(t)) + c_2 * r_2 * (g_{be
 $$x_i(t+1) = x_i(t) + v_i(t+1)$$
 
 
-- \\(v_i(t)\\) : velocity of particle \\(i\\) at iteration \\(t\\) \
-- \\(x_i(t)\\) : position of particle \\(i\\) at iteration \\(t\\) \
-- \\(w\\) : inertia weight\
-- \\(c_1\\), \\(c_2\\) : acceleration coefficients\
-- \\(r_1\\),\\(r_2\\) : random numbers between 0 and 1\
-- \\(p_{best_i}\\) : personal best position of particle \\(i\\)\
-- \\(g_{best}\\) : global best position among all particles 
+| Symbol | Description |
+|---|---|
+| \\(v_i(t)\\) | velocity of particle \\(i\\) at iteration \\(t\\) |
+| \\(x_i(t)\\) | position of particle \\(i\\) at iteration \\(t\\) |
+| \\(w\\) | inertia weight |
+| \\(c_1\\), \\(c_2\\) | acceleration coefficients |
+| \\(r_1\\), \\(r_2\\) | random numbers between 0 and 1 |
+| \\(p_{best_i}\\) | personal best position of particle \\(i\\) |
+| \\(g_{best}\\) | global best position among all particles |
 
 The PSO algorithm initializes a population of particles, each representing a potential solution. Each particle has a position \\(x_i\\) and a velocity \\(v_i\\) in the search space. The position update mechanism is influenced by three components:
 
