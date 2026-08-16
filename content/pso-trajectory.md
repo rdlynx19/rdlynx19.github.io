@@ -40,17 +40,19 @@ Using Particle Swarm Optimization (PSO), we can iteratively refine the solution 
 Particle Swarm Optimization is a bio-inspired optimization algorithm that mimics the collective behavior of swarms, such as birds flocking or fish schooling, to solve complex problems. The algorithm works by iteratively improving a set of candidate solutions (called particles) based on their own best-known position and the best-known position of the entire swarm.
 
 The PSO algorithm updates the velocity and position of each particle using the following equations:
-$$v_i(t+1) = w * v_i(t) + c_1 * r_1 * (p_{best_i} - x_i(t)) + c_2 * r_2 * (g_{best} - x_i(t))$$
+$$\begin{aligned} v_i(t+1) = &\ w * v_i(t) \\\\ &+ c_1 * r_1 * (p_{best_i} - x_i(t)) \\\\ &+ c_2 * r_2 * (g_{best} - x_i(t)) \end{aligned}$$
 $$x_i(t+1) = x_i(t) + v_i(t+1)$$
 
 
-- \\(v_i(t)\\) : velocity of particle \\(i\\) at iteration \\(t\\) \
-- \\(x_i(t)\\) : position of particle \\(i\\) at iteration \\(t\\) \
-- \\(w\\) : inertia weight\
-- \\(c_1\\), \\(c_2\\) : acceleration coefficients\
-- \\(r_1\\),\\(r_2\\) : random numbers between 0 and 1\
-- \\(p_{best_i}\\) : personal best position of particle \\(i\\)\
-- \\(g_{best}\\) : global best position among all particles 
+| Symbol | Description |
+|---|---|
+| \\(v_i(t)\\) | velocity of particle \\(i\\) at iteration \\(t\\) |
+| \\(x_i(t)\\) | position of particle \\(i\\) at iteration \\(t\\) |
+| \\(w\\) | inertia weight |
+| \\(c_1\\), \\(c_2\\) | acceleration coefficients |
+| \\(r_1\\), \\(r_2\\) | random numbers between 0 and 1 |
+| \\(p_{best_i}\\) | personal best position of particle \\(i\\) |
+| \\(g_{best}\\) | global best position among all particles |
 
 The PSO algorithm initializes a population of particles, each representing a potential solution. Each particle has a position \\(x_i\\) and a velocity \\(v_i\\) in the search space. The position update mechanism is influenced by three components:
 
