@@ -449,7 +449,7 @@ params:
 
       - title: Paper Byte - ESP32 based EInk Reader
         content: Custom PCB for an EInk display using ESP32
-        image: /images/projects/paper-byte/final-assembly.png 
+        image: /images/projects/paper-byte/paper-byte.gif 
         featured:
           name: Read More
           link: /paper-byte
