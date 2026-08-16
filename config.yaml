@@ -447,6 +447,23 @@ params:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/pic32MotorControl
 
+      - title: Paper Byte - ESP32 based EInk Reader
+        content: Custom PCB for an EInk display using ESP32
+        image: /images/projects/paper-byte/paper-byte.gif 
+        featured:
+          name: Read More
+          link: /paper-byte
+        badges:
+          - "C++"
+          - "ESP32"
+          - "Mechanical Design"
+          - "PCB Design"
+          - "KiCAD"
+          - "Onshape"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/paper-byte
+      
       - title: Multibody Dynamics Simulation with Lagrangian Equations
         content: Simulating the physics of a jack bouncing around in a box
         image: /images/projects/jack-sim/jack-sim.gif
@@ -474,53 +491,7 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/knuckles-max
-
-      
-      
-      
-
-      - title: Quadrotor Control and Trajectory Generation
-        content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
-        image: /images/projects/quad-matlab/helix-quad.gif
-        featured:
-          name: Read More
-          link: /quad-trajectory
-        badges:
-          - "MATLAB"
-          - "Trajectory Generation"
-          - "Control"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
-
-      # - title: Image Denoising using Convolutional Autoencoders
-      #   content: Implementation of an image-denoising autoencoder model on the MNIST dataset
-      #   image: /images/projects/denoising/image-denoising.png
-      #   featured:
-      #     name: Read More
-      #     link: /image-denoising
-      #   badges:
-      #     - "Python"
-      #     - "Deep Learning"
-      #     - "MNIST"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/rdlynx19/ImageDenoisingAE
-    
-      # - title: Tethered UAV 2D Simulation
-      #   content: Simulation of a tethered UAV using Newtonian Dynamics and PD Control
-      #   image: /images/projects/taut-cable/taut-cable.gif
-      #   featured:
-      #     name: Read More
-      #     link: /taut-cable-sim
-      #   badges:
-      #     - "Python"
-      #     - "Dynamics"
-      #     - "Control"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/rdlynx19/taut-cable-2D-control 
-      
+ 
       - title: Trajectory Generation using Particle Swarm Optimization
         content: Solving the Traveling Salesman Problem (TSP) using PSO to generate quadrotor trajectories
         image: /images/projects/pso-trajectory/pso-tracer.gif
@@ -534,6 +505,20 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/rdlynx19/pso-trajectory
+
+      # - title: Quadrotor Control and Trajectory Generation
+      #   content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
+      #   image: /images/projects/quad-matlab/helix-quad.gif
+      #   featured:
+      #     name: Read More
+      #     link: /quad-trajectory
+      #   badges:
+      #     - "MATLAB"
+      #     - "Trajectory Generation"
+      #     - "Control"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
 
       # - title: SenseVR - SteamVR Compatible Headset
       #   content: Custom Designed Virtual Reality Headset based on HadesVR
@@ -578,7 +563,33 @@ params:
       #       url: https://github.com/rdlynx19/maze-solving
 
       
-      
+       # - title: Image Denoising using Convolutional Autoencoders
+      #   content: Implementation of an image-denoising autoencoder model on the MNIST dataset
+      #   image: /images/projects/denoising/image-denoising.png
+      #   featured:
+      #     name: Read More
+      #     link: /image-denoising
+      #   badges:
+      #     - "Python"
+      #     - "Deep Learning"
+      #     - "MNIST"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/ImageDenoisingAE
+    
+      # - title: Tethered UAV 2D Simulation
+      #   content: Simulation of a tethered UAV using Newtonian Dynamics and PD Control
+      #   image: /images/projects/taut-cable/taut-cable.gif
+      #   featured:
+      #     name: Read More
+      #     link: /taut-cable-sim
+      #   badges:
+      #     - "Python"
+      #     - "Dynamics"
+      #     - "Control"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/rdlynx19/taut-cable-2D-control 
 
       # - title: ESP32 Navigation Device 
       #   content: ESP32 based Visual Navigation device using Bluetooth Communication and Frequency Detection
