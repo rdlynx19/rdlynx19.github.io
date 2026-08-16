@@ -17,7 +17,8 @@ mathjax: true
 repoName: paper-byte
 ---
 Paper Byte is an ESP32-based e-reader that parses and renders EPUB-style ebooks, with simple three-button navigation.
-<!-- {{<youtube jKNxeeGMev4>}} -->
+{{<youtube F_LtdLZ-h9g>}}
+<!-- https://youtube.com/shorts/F_LtdLZ-h9g?feature=share -->
 
 ---
 ## Hardware Setup
@@ -115,11 +116,22 @@ Each chapter is only parsed and laid out once, then kept in RAM, so flipping pag
 
 The final design turned out much cleaner, with the PCB eliminating nearly all wiring. The only wires left were a USB-C cable exposing the ESP32's charging port, the battery connection, and one small power jumper between the SD card module and the e-paper driver to patch a missed trace.
 
-![image](/images/projects/paper-byte/final-assembly.png)
+<div style="display: flex; justify-content: space-between;">
+  <img src="/images/projects/paper-byte/final-assembly.png" alt="pcb-layout" style="width: 48%; height: auto;"/>
+  <img src="/images/projects/paper-byte/final-full-assembly.png" alt="pcb-render" style="width: 48%; height: auto;"/>
+</div>
+<br>
 
 The final assembly with the 3D printed case looks something like this. 
 
-![image](/images/projects/paper-byte/paperbyte-case.JPG)
+
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="/images/projects/paper-byte/front-assembly.JPG" alt="pcb-layout" style="width: 48%; height: auto;"/>
+  <img src="/images/projects/paper-byte/front-read.JPG" alt="pcb-render" style="width: 48%; height: auto;"/>
+</div>
+<br>
+
 
 ---
 
