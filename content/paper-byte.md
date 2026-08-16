@@ -1,6 +1,6 @@
 ---
 title: "Paper Byte - ESP32 based E-ink Reader"
-date: 2025-06-09
+date: 2026-08-16
 draft: false
 author: "Pushkar Dave"
 tags:
